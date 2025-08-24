@@ -5,13 +5,13 @@ player.rigidbody = rigidbody:new()
 player.animator = animator:new({animation:new({ 1, 2 }, 2), animation:new({ 3, 4 }, 6)})
 
 function player:draw()
-    player.animator:draw(player.transform)
+    player.animator:draw(player.transform, player.rigidbody.velocity.x < 0)
 end
 
 function player:update()
     if btn(0) then
         player.rigidbody.velocity.x -= .16
-        player.animator:set_state(2, true)
+        player.animator:set_state(2)
     elseif btn(1) then
         player.rigidbody.velocity.x += .16
         player.animator:set_state(2)

@@ -1,0 +1,14 @@
+{
+    "files.exclude": {
+        "**/backup/": true,
+        "**/bbs/": true,
+        "**/carts/": true,
+        "**/cdata/": true,
+        "**/cstore/": true,
+        "**/plates/": true,
+        "**/activity_log.txt": true,
+        "**/config.txt": true,
+        "**/log.txt": true,
+        "**/sdl_controllers.txt": true
+    }
+}
