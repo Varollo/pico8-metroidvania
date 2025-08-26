@@ -1,3 +1,6 @@
+local POS_INF = 32767.99999
+local NEG_INF = -32767.99999
+
 function print_table(table, indent)
     indent = indent or "" .. "  "
     for k, v in pairs(table) do

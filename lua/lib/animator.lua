@@ -21,5 +21,10 @@ function animator:add_state(state)
 end
 
 function  animator:set_state(state_id)
-    self.__i = state_id    
+    if self.__i == state_id then
+        return
+    end
+
+    self.__i = state_id
+    self.animation[self.__i]:set_i(1)
 end
